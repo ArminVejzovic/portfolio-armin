@@ -1,0 +1,188 @@
+/* src/styles.css */
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+  font-family: Arial, sans-serif;
+}
+
+body.light {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+body.dark {
+  background-color: #1e1e1e;
+  color: #ccc;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-light {
+  background-color: #fff;
+  color: #333;
+}
+
+.navbar-dark {
+  background-color: #333;
+  color: #ccc;
+}
+
+.navbar .navbar-brand, .navbar .nav-link {
+  transition: color 0.3s;
+}
+
+.navbar-light .navbar-brand, .navbar-light .nav-link {
+  color: #333;
+}
+
+.navbar-dark .navbar-brand, .navbar-dark .nav-link {
+  color: #ccc;
+}
+
+.navbar-brand .logo {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.navbar-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.navbar-buttons .btn {
+  margin-bottom: 0.5rem;
+}
+
+.navbar-buttons .dropdown-menu {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-buttons .dropdown-menu.show {
+  display: block;
+}
+
+.navbar-buttons .dropdown-menu .dropdown-item {
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-buttons .dropdown-menu .dropdown-item .flag-icon {
+  width: 20px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.navbar-buttons .dropdown-menu .dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.navbar-buttons .btn-secondary {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-buttons .btn-secondary .fas {
+  margin-right: 0.5rem;
+}
+
+.navbar-buttons .btn-secondary:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.home {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.home .title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.about, .skills, .projects, .contact {
+  padding: 2rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.about.light, .skills.light, .projects.light, .contact.light {
+  background-color: #fff;
+  color: #333;
+}
+
+.about.dark, .skills.dark, .projects.dark, .contact.dark {
+  background-color: #2a2a2a;
+  color: #ccc;
+}
+
+.skill-card, .project-card {
+  margin-bottom: 1rem;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.skill-card .card-body, .project-card .card-body {
+  text-align: center;
+}
+
+.skill-card img, .project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.skill-card.light, .project-card.light {
+  background-color: #fafafa;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.skill-card.dark, .project-card.dark {
+  background-color: #3a3a3a;
+  color: #ccc;
+  border: 1px solid #555;
+}
+
+img.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.arrow-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.arrow-up:hover {
+  background-color: #555;
+}
+
+.skill-card, .project-card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.skill-card.visible, .project-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
