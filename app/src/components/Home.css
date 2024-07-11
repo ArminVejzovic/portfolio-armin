@@ -1,0 +1,76 @@
+
+.home {
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+    transition: background 0.5s, color 0.5s;
+}
+
+.animated-text {
+    font-size: 4rem;
+    font-weight: bold;
+    opacity: 0;
+    animation: textFadeInUp 1.5s ease-in-out forwards;
+}
+
+.animated-subtext {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    opacity: 0;
+    animation: textFadeInUp 2s ease-in-out forwards 0.5s;
+}
+
+.typed-text {
+    margin-top: 20px;
+    font-size: 1.25rem;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.typed-cursor {
+    font-weight: 100;
+    animation: blink 0.7s infinite;
+    display: inline-block;
+}
+
+
+@keyframes textFadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.home.light {
+    background: linear-gradient(135deg, #ffffff, #e0e0e0);
+    color: #333333;
+}
+
+.typed-text.light {
+    color: goldenrod;
+}
+
+.home.dark {
+    background: linear-gradient(135deg, #1e1e1e, #121212);
+    color: #eeeeee;
+}
+
+.typed-text.dark {
+    color: gold;
+}

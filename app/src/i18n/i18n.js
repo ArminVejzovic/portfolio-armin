@@ -1,11 +1,16 @@
-// src/i18n/i18n.js
-import React, { createContext, useState, useContext } from 'react';
+import React, { createContext, useState, useContext, useEffect } from 'react';
 import translations from './translations';
 
 const I18nContext = createContext();
 
 export const I18nProvider = ({ children }) => {
-    const [language, setLanguage] = useState('en');
+    const [language, setLanguage] = useState(() => {
+        return localStorage.getItem('language') || 'en';
+    });
+
+    useEffect(() => {
+        localStorage.setItem('language', language);
+    }, [language]);
 
     const changeLanguage = (lang) => {
         setLanguage(lang);

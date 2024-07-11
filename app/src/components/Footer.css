@@ -1,0 +1,36 @@
+.footer {
+    padding: 20px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #0077b5;
+    margin: 0 15px;
+    font-size: 28px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.footer-light .social-icons a {
+    color: #333;
+}
+
+.footer-light .social-icons a:hover {
+    color: #0077b5;
+}
+
+.footer-dark .social-icons a {
+    color: darkgray;
+}
+
+.footer-dark .social-icons a:hover {
+    color: #0077b5;
+}

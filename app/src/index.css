@@ -1,5 +1,16 @@
 /* src/styles.css */
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   transition: background-color 0.3s, color 0.3s;
   font-family: Arial, sans-serif;
@@ -16,11 +27,11 @@ body.dark {
 }
 
 .navbar {
-  position: fixed;
+  position: relative;
   top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
   z-index: 1000;
+  box-shadow: 0 4px 2px -2px gray;
   background-color: #333;
   color: #fff;
   padding: 1rem 2rem;
@@ -52,7 +63,7 @@ body.dark {
 .navbar-brand .logo {
   width: 40px;
   height: auto;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .navbar-buttons {
@@ -61,8 +72,23 @@ body.dark {
   gap: 10px;
 }
 
+@media (max-width: 1000px) {
+  .navbar-buttons {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      gap: 10px;
+      margin-left: 25%;
+  }
+}
+
 .navbar-buttons .btn {
   margin-bottom: 0.5rem;
+}
+
+.dropdown-menu {
+  max-height: 150px;
+  overflow:auto;
 }
 
 .navbar-buttons .dropdown-menu {
@@ -74,6 +100,7 @@ body.dark {
 
 .navbar-buttons .dropdown-menu.show {
   display: block;
+  margin-top: 40px;
 }
 
 .navbar-buttons .dropdown-menu .dropdown-item {
@@ -108,6 +135,7 @@ body.dark {
 .home {
   padding: 4rem 2rem;
   text-align: center;
+  display: inline-block;
 }
 
 .home .title {
@@ -126,7 +154,7 @@ body.dark {
 }
 
 .about.dark, .skills.dark, .projects.dark, .contact.dark {
-  background-color: #2a2a2a;
+  background-color: #1e1e1e;
   color: #ccc;
 }
 
@@ -186,3 +214,97 @@ img.responsive {
   opacity: 1;
   transform: translateY(0);
 }
+
+.scroll-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.scroll-to-top:hover {
+  background: #0056b3;
+}
+
+.btn {
+  width: 70px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.nav-item {
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sticky-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  transition: top 0.3s;
+}
+
+.navbar-toggler-icon {
+  font-size: 2rem;
+  transition: all 0.3s;
+  color: #ccc;
+}
+
+.navbar-light .navbar-toggler-icon {
+  color: #333;
+}
+
+.icon {
+  margin-right: 12px;
+}
+
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-light .nav-link:hover {
+  text-decoration-color: #333;
+}
+
+.navbar-dark .nav-link:hover {
+  text-decoration-color: #ccc;
+}
+
+
+
+
+
