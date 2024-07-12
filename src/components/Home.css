@@ -1,4 +1,3 @@
-
 .home {
     text-align: center;
     padding: 0;
@@ -25,6 +24,9 @@
     font-size: 1.25rem;
     display: inline-block;
     white-space: nowrap;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
 }
 
 .typed-cursor {
@@ -33,6 +35,19 @@
     display: inline-block;
 }
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .typed-text {
+        font-size: 1rem;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 480px) {
+    .typed-text {
+        font-size: 0.875rem;
+    }
+}
 
 @keyframes textFadeInUp {
     0% {
