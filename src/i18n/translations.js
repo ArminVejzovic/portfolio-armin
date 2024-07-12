@@ -49,7 +49,7 @@ const translations = {
       },
       home: {
         title: "Armin Vejzović",
-        subtitle: "Softverski inženjer i web developer",
+        subtitle: "Softverski Inžinjer i Web Developer",
         scrollDown: "Pomaknite se dolje da saznate više o meni!",
       },
       about: {
@@ -131,7 +131,7 @@ const translations = {
       },
       home: {
         title: "Armin Vejzovic",
-        subtitle: "Ingénieur logiciel & Développeur web",
+        subtitle: "Ingénieur Logiciel & Développeur Web",
         scrollDown: "Faites défiler vers le bas pour en savoir plus sur moi!",
       },
       about: {
