@@ -9,6 +9,7 @@ const Contact = ({ currentTheme }) => {
         email: '',
         message: ''
     });
+    const [isSending, setIsSending] = useState(false);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -20,31 +21,44 @@ const Contact = ({ currentTheme }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setIsSending(true);
+
+        const form = document.createElement('form');
+        form.setAttribute('action', 'https://formsubmit.co/29armin.vejzovic@gmail.com');
+        form.setAttribute('method', 'POST');
+        form.setAttribute('style', 'display: none;');
+
+        for (const key in formData) {
+            if (formData.hasOwnProperty(key)) {
+                const input = document.createElement('input');
+                input.setAttribute('type', 'hidden');
+                input.setAttribute('name', key);
+                input.setAttribute('value', formData[key]);
+                form.appendChild(input);
+            }
+        }
+
+        const subjectInput = document.createElement('input');
+        subjectInput.setAttribute('type', 'hidden');
+        subjectInput.setAttribute('name', '_subject');
+        subjectInput.setAttribute('value', 'New submission from Contact Form');
+        form.appendChild(subjectInput);
+
+        document.body.appendChild(form);
 
         try {
-            const response = await fetch('https://formsubmit.co/29armin.vejzovic@gmail.com', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    ...formData,
-                    _subject: 'New submission from Contact Form'
-                })
+            form.submit();
+            alert('✅ Your message has been sent successfully! Thank you very much!');
+            setFormData({
+                name: '',
+                email: '',
+                message: ''
             });
-
-            if (response.ok) {
-                alert('✅ Your message has been sent successfully! Thank you very much!');
-                setFormData({
-                    name: '',
-                    email: '',
-                    message: ''
-                });
-            } else {
-                alert('❌ There was an error sending your message. Please try again later.');
-            }
         } catch (error) {
             alert('❌ There was an error sending your message. Please try again later.');
+        } finally {
+            setIsSending(false);
+            document.body.removeChild(form);
         }
     };
 
@@ -62,6 +76,7 @@ const Contact = ({ currentTheme }) => {
                         onChange={handleChange}
                         placeholder={"John Doe"}
                         required
+                        disabled={isSending}
                     />
                 </div>
                 <div className="form-group">
@@ -74,6 +89,7 @@ const Contact = ({ currentTheme }) => {
                         onChange={handleChange}
                         placeholder={"john.doe@example.com"}
                         required
+                        disabled={isSending}
                     />
                 </div>
                 <div className="form-group">
@@ -86,9 +102,16 @@ const Contact = ({ currentTheme }) => {
                         onChange={handleChange}
                         placeholder={"Your message..."}
                         required
+                        disabled={isSending}
                     ></textarea>
                 </div>
-                <button type="submit" className="btn btn-send btn-primary">{translations.contact.submit}</button>
+                <button
+                    type="submit"
+                    className="btn btn-send btn-primary"
+                    disabled={isSending}
+                >
+                    {isSending ? 'Sending...' : translations.contact.submit}
+                </button>
             </form>
             <br />
             <br />
