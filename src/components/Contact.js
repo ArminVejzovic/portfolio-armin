@@ -72,6 +72,7 @@ const Contact = ({ currentTheme }) => {
                         value={formData.name}
                         onChange={handleChange}
                         placeholder={"John Doe"}
+                        required
                     />
                 </div>
                 <div className="form-group">
@@ -83,6 +84,7 @@ const Contact = ({ currentTheme }) => {
                         value={formData.email}
                         onChange={handleChange}
                         placeholder={"john.doe@example.com"}
+                        required
                     />
                 </div>
                 <div className="form-group">
@@ -94,6 +96,7 @@ const Contact = ({ currentTheme }) => {
                         value={formData.message}
                         onChange={handleChange}
                         placeholder={"Your message..."}
+                        required
                     ></textarea>
                 </div>
                 <button type="submit" className="btn btn-send btn-primary">{translations.contact.submit}</button>
