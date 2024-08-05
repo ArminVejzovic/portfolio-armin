@@ -18,45 +18,34 @@ const Contact = ({ currentTheme }) => {
         });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const form = document.createElement('form');
-        form.setAttribute('action', 'https://formsubmit.co/29armin.vejzovic@gmail.com');
-        form.setAttribute('method', 'POST');
-        form.setAttribute('style', 'display: none;');
-
-        for (const key in formData) {
-            if (formData.hasOwnProperty(key)) {
-                const input = document.createElement('input');
-                input.setAttribute('type', 'hidden');
-                input.setAttribute('name', key);
-                input.setAttribute('value', formData[key]);
-                form.appendChild(input);
-            }
-        }
-
-        const subjectInput = document.createElement('input');
-        subjectInput.setAttribute('type', 'hidden');
-        subjectInput.setAttribute('name', '_subject');
-        subjectInput.setAttribute('value', 'New submission from Contact Form');
-        form.appendChild(subjectInput);
-
-        document.body.appendChild(form);
-
         try {
-            form.submit();
-            alert('✅ Your message has been sent successfully! Thank you very much!');
-            setFormData({
-                name: '',
-                email: '',
-                message: ''
+            const response = await fetch('https://formsubmit.co/29armin.vejzovic@gmail.com', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    ...formData,
+                    _subject: 'New submission from Contact Form'
+                })
             });
+
+            if (response.ok) {
+                alert('✅ Your message has been sent successfully! Thank you very much!');
+                setFormData({
+                    name: '',
+                    email: '',
+                    message: ''
+                });
+            } else {
+                alert('❌ There was an error sending your message. Please try again later.');
+            }
         } catch (error) {
             alert('❌ There was an error sending your message. Please try again later.');
         }
-
-        document.body.removeChild(form);
     };
 
     return (
