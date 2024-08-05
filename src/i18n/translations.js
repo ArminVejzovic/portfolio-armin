@@ -27,7 +27,7 @@ const translations = {
           description: "2048 Game in Java programming language",
         },
         bookfix: {
-          description: "An application that allows users to track books read, add books to the reading list and share books with friends.",
+          description: "An Android application that allows users to track books read, add books to the reading list and share books with friends.",
         },
         moreProjects: "More of my projects...",
       },
@@ -68,7 +68,7 @@ const translations = {
           description: "Igra 2048 u programskom jeziku Java",
         },
         bookfix: {
-          description: "Aplikacija koja omogućava korisnicima praćenje pročitanih knjiga, dodavanje knjiga na listu za čitanje i dijeljenje knjiga s prijateljima.",
+          description: "Android aplikacija koja omogućava korisnicima praćenje pročitanih knjiga, dodavanje knjiga na listu za čitanje i dijeljenje knjiga s prijateljima.",
         },
         moreProjects: "Više mojih projekata...",
       },
@@ -109,7 +109,7 @@ const translations = {
           description: "2048-Spiel in der Programmiersprache Java",
         },
         bookfix: {
-          description: "Eine Anwendung, die es Benutzern ermöglicht, gelesene Bücher zu verfolgen, Bücher zur Leseliste hinzuzufügen und Bücher mit Freunden zu teilen.",
+          description: "Eine Android Anwendung, die es Benutzern ermöglicht, gelesene Bücher zu verfolgen, Bücher zur Leseliste hinzuzufügen und Bücher mit Freunden zu teilen.",
         },
         moreProjects: "Mehr meiner Projekte...",
       },
@@ -150,7 +150,7 @@ const translations = {
           description: "Jeu 2048 en langage de programmation Java",
         },
         bookfix: {
-          description: "Une application qui permet aux utilisateurs de suivre les livres lus, d'ajouter des livres à la liste de lecture et de partager des livres avec des amis.",
+          description: "Une Android application qui permet aux utilisateurs de suivre les livres lus, d'ajouter des livres à la liste de lecture et de partager des livres avec des amis.",
         },
         moreProjects: "Plus de mes projets...",
       },
@@ -191,7 +191,7 @@ const translations = {
           description: "Juego 2048 en lenguaje de programación Java",
         },
         bookfix: {
-          description: "Una aplicación que permite a los usuarios seguir los libros leídos, agregar libros a la lista de lectura y compartir libros con amigos.",
+          description: "Una Android aplicación que permite a los usuarios seguir los libros leídos, agregar libros a la lista de lectura y compartir libros con amigos.",
         },
         moreProjects: "Más de mis proyectos...",
       },
@@ -232,7 +232,7 @@ const translations = {
           description: "用Java编写的2048游戏",
         },
         bookfix: {
-          description: "一个允许用户跟踪已读书籍、将书籍添加到阅读列表并与朋友分享书籍的应用程序。",
+          description: "一个允许用户跟踪已读书籍、将书籍添加到阅读列表并与朋友分享书籍的应用程序。一個 Android 應用程序，允許用戶追蹤閱讀的書籍、將書籍添加到閱讀清單以及與朋友分享書籍。",
         },
         moreProjects: "更多我的项目...",
       },
@@ -273,7 +273,7 @@ const translations = {
           description: "जावा प्रोग्रामिंग भाषा में 2048 गेम",
         },
         bookfix: {
-          description: "एक एप्लिकेशन जो उपयोगकर्ताओं को पढ़ी गई पुस्तकों का ट्रैक रखने, पढ़ने की सूची में पुस्तकों को जोड़ने और दोस्तों के साथ पुस्तकों को साझा करने की अनुमति देता है।",
+          description: "एक एंड्रॉइड एप्लिकेशन जो उपयोगकर्ताओं को पढ़ी गई किताबों को ट्रैक करने, पढ़ने की सूची में किताबें जोड़ने और दोस्तों के साथ किताबें साझा करने की अनुमति देता है।",
         },
         moreProjects: "मेरे अधिक प्रोजेक्ट्स...",
       },
@@ -314,7 +314,7 @@ const translations = {
           description: "Javaプログラミング言語での2048ゲーム",
         },
         bookfix: {
-          description: "ユーザーが読んだ本を追跡し、読書リストに本を追加し、友人と本を共有できるアプリケーション。",
+          description: "ユーザーが読んだ本を追跡したり、読書リストに本を追加したり、友人と本を共有したりできる Android アプリケーションです。",
         },
         moreProjects: "他のプロジェクト...",
       },
@@ -355,7 +355,7 @@ const translations = {
           description: "Игра 2048 на языке программирования Java",
         },
         bookfix: {
-          description: "Приложение, которое позволяет пользователям отслеживать прочитанные книги, добавлять книги в список для чтения и делиться книгами с друзьями.",
+          description: "Приложение для Android, которое позволяет пользователям отслеживать прочитанные книги, добавлять книги в список для чтения и делиться книгами с друзьями.",
         },
         moreProjects: "Больше моих проектов...",
       },
@@ -396,7 +396,7 @@ const translations = {
           description: "Jogo 2048 na linguagem de programação Java",
         },
         bookfix: {
-          description: "Um aplicativo que permite aos usuários acompanhar os livros lidos, adicionar livros à lista de leitura e compartilhar livros com amigos.",
+          description: "Uma aplicação Android que permite aos utilizadores rastrear livros lidos, adicionar livros à lista de leitura e partilhar livros com amigos.",
         },
         moreProjects: "Mais dos meus projetos...",
       },
