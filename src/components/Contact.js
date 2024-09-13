@@ -47,17 +47,12 @@ const Contact = ({ currentTheme }) => {
         document.body.appendChild(form);
 
         try {
+            setIsSending(true);
             form.submit();
-            alert('✅ Your message has been sent successfully! Thank you very much!');
-            setFormData({
-                name: '',
-                email: '',
-                message: ''
-            });
         } catch (error) {
             alert('❌ There was an error sending your message. Please try again later.');
-        } finally {
             setIsSending(false);
+        } finally {
             document.body.removeChild(form);
         }
     };
@@ -110,7 +105,13 @@ const Contact = ({ currentTheme }) => {
                     className="btn btn-send btn-primary"
                     disabled={isSending}
                 >
-                    {isSending ? 'Sending...' : translations.contact.submit}
+                     {isSending ? (
+                        <>
+                            <i className="fas fa-paper-plane"></i>...
+                        </>
+                    ) : (
+                        translations.contact.submit
+                    )}
                 </button>
             </form>
             <br />

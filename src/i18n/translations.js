@@ -20,6 +20,9 @@ const translations = {
         title: "Skills",
       },
       projects: {
+        foodieRestaurants: {
+          description: "A dynamic web application for ordering food and managing restaurants, menus and delivery",
+        },
         projectRecords: {
           description: "Projects management system",
         },
@@ -61,6 +64,9 @@ const translations = {
       },
       projects: {
         title: "Projekti",
+        foodieRestaurants: {
+          description: "Dinamička web aplikacija za naručivanje hrane i upravljanje restoranima, menijima i dostavom.",
+        },
         projectRecords: {
           description: "Sistem za upravljanje projektima",
         },
@@ -102,6 +108,9 @@ const translations = {
       },
       projects: {
         title: "Projekte",
+        foodieRestaurants: {
+          description: "Eine dynamische Webanwendung zum Bestellen von Speisen und zum Verwalten von Restaurants, Menüs und Lieferungen",
+        },
         projectRecords: {
           description: "Projektmanagementsystem",
         },
@@ -143,6 +152,9 @@ const translations = {
       },
       projects: {
         title: "Projets",
+        foodieRestaurants: {
+          description: "Une application web dynamique pour commander de la nourriture et gérer les restaurants, les menus et la livraison",
+        },
         projectRecords: {
           description: "Système de gestion de projets",
         },
@@ -184,6 +196,9 @@ const translations = {
       },
       projects: {
         title: "Proyectos",
+        foodieRestaurants: {
+          description: "Una aplicación web dinámica para pedir comida y gestionar restaurantes, menús y entregas.",
+        },
         projectRecords: {
           description: "Sistema de gestión de proyectos",
         },
@@ -225,6 +240,9 @@ const translations = {
       },
       projects: {
         title: "项目",
+        foodieRestaurants: {
+          description: "用於訂餐和管理餐廳、菜單和送貨的動態 Web 應用程式",
+        },
         projectRecords: {
           description: "项目管理系统",
         },
@@ -266,6 +284,9 @@ const translations = {
       },
       projects: {
         title: "प्रोजेक्ट्स",
+        foodieRestaurants: {
+          description: "खाना ऑर्डर करने और रेस्तरां, मेनू और डिलीवरी प्रबंधित करने के लिए एक गतिशील वेब एप्लिकेशन",
+        },
         projectRecords: {
           description: "प्रोजेक्ट प्रबंधन प्रणाली",
         },
@@ -307,6 +328,9 @@ const translations = {
       },
       projects: {
         title: "プロジェクト",
+        foodieRestaurants: {
+          description: "食べ物を注文し、レストラン、メニュー、配達を管理するための動的な Web アプリケーション",
+        },
         projectRecords: {
           description: "プロジェクト管理システム",
         },
@@ -348,6 +372,9 @@ const translations = {
       },
       projects: {
         title: "Проекты",
+        foodieRestaurants: {
+          description: "Динамичное веб-приложение для заказа еды и управления ресторанами, меню и доставкой.",
+        },
         projectRecords: {
           description: "Система управления проектами",
         },
@@ -389,6 +416,9 @@ const translations = {
       },
       projects: {
         title: "Projetos",
+        foodieRestaurants: {
+          description: "Uma aplicação web dinâmica para encomendar comida e gerir restaurantes, menus e entregas",
+        },
         projectRecords: {
           description: "Sistema de gestão de projetos",
         },

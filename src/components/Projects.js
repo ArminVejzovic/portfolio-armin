@@ -5,6 +5,12 @@ import { useTranslation } from '../i18n/i18n.js';
 const Projects = ({ currentTheme }) => {
     const projects = [
         {
+            title: 'Foodie',
+            technologies: ['FastAPI', 'Next.js', 'PostgreSQL'],
+            githubLink: 'https://github.com/ArminVejzovic/foodie',
+            translationKey: 'foodieRestaurants'
+        },
+        {
             title: 'Project-Records',
             technologies: ['Node.js', 'EJS', 'PostgreSQL'],
             githubLink: 'https://github.com/ArminVejzovic/Project-Records',
