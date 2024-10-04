@@ -20,6 +20,7 @@ const translations = {
         title: "Skills",
       },
       projects: {
+        title: "Projects",
         foodieRestaurants: {
           description: "A dynamic web application for ordering food and managing restaurants, menus and delivery",
         },
