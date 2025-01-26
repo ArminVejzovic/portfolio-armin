@@ -58,7 +58,7 @@ const Navbar = ({ toggleTheme, currentTheme }) => {
                         </ul>
                         <br></br>
                         <div className="navbar-buttons ml-auto d-flex flex-column flex-lg-row align-items-center">
-                            <a className="btn cv-btn btn-secondary" href={language === 'bs' ? 'cv_armin_vejzovic_bih4.pdf' : 'cv_armin_vejzovic_eng4.pdf'} target="_blank" rel="noreferrer" onClick={closeMenu}>
+                            <a className="btn cv-btn btn-secondary" href={language === 'bs' ? 'cv_armin_vejzovic_bih5.pdf' : 'cv_armin_vejzovic_eng5.pdf'} target="_blank" rel="noreferrer" onClick={closeMenu}>
                                 <i className="fas fa-file"></i> {translations.navbar.cv}
                             </a>
                             <div ref={dropdownRef} className="dropdown d-flex justify-content-center mb-lg-0">
